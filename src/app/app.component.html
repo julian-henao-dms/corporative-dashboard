@@ -9,6 +9,11 @@
 
 <mat-sidenav-container>
   <mat-sidenav  #sidenav="matSidenav">
+    <button  class="material-symbols-outlined close-nav" mat-icon-button  (click)="sidenav.toggle()">
+      <mat-icon> close </mat-icon>
+      <!-- <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon> -->
+          <!-- <mat-icon *ngIf="sidenav.opened">  close </mat-icon> -->
+  </button>
     <!-- <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
       <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
           <mat-icon *ngIf="sidenav.opened">  close </mat-icon>
@@ -64,8 +69,21 @@
         <!-- <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon> -->
             <!-- <mat-icon *ngIf="sidenav.opened">  close </mat-icon> -->
     </button>
-      Responsive sidebar navigation....
+    <div class="toolbar-logo">
+      <img class="logo-app" src="../assets/img/logo.png" alt="">
+    </div>
+<div class="session-user">
+  <button mat-button class="menu-button">
+    <mat-icon class="material-symbols-outlined">
+    home</mat-icon>
 
+</button>
+  <button mat-button class="menu-button">
+    <mat-icon class="material-symbols-outlined">
+      logout</mat-icon>
+
+</button>
+</div>
     </mat-toolbar>
     <div class="content">
       <router-outlet></router-outlet>
