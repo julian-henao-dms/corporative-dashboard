@@ -41,6 +41,39 @@
         <span>Servicios de Taller</span>
     </li>
     </ul> -->
+
+      <div class="main-nav">
+        <mat-nav-list class="nav-dms">
+            <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" >
+                <mat-icon class="material-symbols-outlined">home</mat-icon>Inicio</a>
+            <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" >
+                <mat-icon class="material-symbols-outlined">home</mat-icon>Inicio</a>
+
+
+            <mat-accordion class="app-nav-accordion">
+                <mat-expansion-panel class="mat-elevation-z0 dms-exp-header">
+                    <mat-expansion-panel-header class="exp-header-dms">
+                        <mat-panel-title>
+                            <mat-icon class="material-symbols-outlined">sort</mat-icon>Submenu</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-nav-list>
+                        <a class="item-menu-dms exp-item" mat-list-item href="#" routerLink="/categorias" >
+                            <mat-icon class="material-symbols-outlined">category</mat-icon>Categorias</a>
+                        <a class="item-menu-dms exp-item" mat-list-item href="#" routerLink="/producto" >
+                            <mat-icon class="material-symbols-outlined">sell</mat-icon>Producto</a>
+                    </mat-nav-list>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+        </mat-nav-list>
+
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button">
+        <mat-icon>help</mat-icon>
+        <span>Help</span>
+    </button>
+    </div>
+
     <button mat-button class="menu-button">
       <mat-icon class="material-symbols-outlined">
       home</mat-icon>

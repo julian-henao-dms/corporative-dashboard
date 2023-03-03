@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
+$main-color: #0F172A;
+$secundary-color: #004084;
+$content-exp-panel: #004084;
+$hover-simple-item: #2e2e8e;
 mat-toolbar{
   background: #fff;
   color: #0F172A;
@@ -108,4 +112,93 @@ mat-divider {
   position: absolute;
   right: 0;
 }
+// .main-nav {
+//   position: fixed;
+//   top: 330px;
+//   bottom: 54px;
+//   background-color: $main-color;
+//   overflow: auto;
+//   width: 280px;
+// }
 
+.sidenav-dms {
+  margin: 5px;
+  width: 300px;
+  border-right: none;
+  background: $main-color;
+  color: white;
+  border-radius: 10px;
+  padding: 0px;
+  text-align: center;
+  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+}
+.nav-dms a {
+  color: white;
+  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+}
+
+a.mat-list-item.mat-focus-indicator.item-menu-dms:hover {
+  border-left: solid 1px #cacaca;
+  box-sizing: border-box;
+  background-color: $main-color;
+}
+
+a.mat-list-item.mat-focus-indicator.item-menu-dms.simple-item {
+  height: 45px;
+}
+.item-menu-dms {
+  border-left-color: solid 1px rgb(249, 219, 219)
+}
+.simple-item {
+  margin-bottom: 0.2em;
+  background-color: $main-color;
+}
+
+.simple-item:hover {
+  margin-bottom: 0.2em;
+  background-color: $hover-simple-item;
+}
+.exp-header-dms {
+  padding: 0 20px 0 18px;
+  height: 45px;
+  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+}
+.exp-item {
+  background-color: $content-exp-panel;
+}
+mat-expansion-panel {
+  background-color: $main-color;
+  margin-bottom: 0.2em;
+  border-radius: 0px;
+}
+
+mat-expansion-panel,
+mat-expansion-panel.mat-expanded.mat-expansion-panel-spacing {
+  background: $content-exp-panel;
+  color: #fff;
+}
+.mat-expansion-panel-header-title {
+  color: rgb(255 255 255 / 87%);
+}
+mat-expansion-panel:hover {
+  background-color: $content-exp-panel;
+  border-left: solid 1px #cacaca;
+}
+
+
+
+.mat-accordion .mat-expansion-panel:first-of-type {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.mat-accordion .mat-expansion-panel:last-of-type {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+span.mat-list-item-content:hover {
+  background-color: $main-color;
+}
