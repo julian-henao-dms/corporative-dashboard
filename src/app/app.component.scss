@@ -1,204 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
-$main-color: #0F172A;
-$secundary-color: #004084;
-$content-exp-panel: #004084;
-$hover-simple-item: #2e2e8e;
-mat-toolbar{
-  background: #fff;
-  color: #0F172A;
-}
-
-mat-sidenav{
-  margin: 0px;
-  width: 300px;
-  border-right: none;
-  background: #0F172A;
-  color: white;
-  border-radius: 0px;
-  padding: 16px;
-  text-align: center;
-  button{
-    font-family: 'Barlow', sans-serif;
-  }
-
-}
-
-.content {
-  height: calc(100vh - 100px);
-  // border-radius: 10px;
-  // margin: 16px;
-  // margin-left: 32px;
-
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-  // font-size: 2rem;
-  color: lightgray;
-}
-
-
-.toolbar-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  width: 200px;
-  height: 100%;
-  padding: 5px;
-  clip-path: polygon(0% 0%,90% 0%,100% 100%,0% 100%);
-  .logo-app{
-    width: auto;
-    max-width: 90%;
-    max-height: 90%;
-    margin-right: 20px;
-  }
-}
-
-mat-sidenav-container {
-  height: calc(100vh);
-  // height: calc(100vh - 65px);
-}
-
-
-.menu-button {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 1rem;
-
-  mat-icon {
-      margin-right: 8px;
-  }
-}
-
-.avatar {
-  margin-top: 16px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.name {
-    margin-top: 8px;
-    font-weight: normal;
-    margin-bottom: 2px;
-}
-
-.designation {
-    margin-top: 2px;
-    font-size: 0.7rem;
-    color: lightgrey;
-}
-
-mat-divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.close-nav{
-  position: absolute;
-  /* float: right; */
-  display: flex;
-  line-height: 2.5;
-  right: 13px;
-  justify-content: center;
-}
-
-.session-user {
-  display: flex;
-  position: absolute;
-  right: 0;
-}
-// .main-nav {
-//   position: fixed;
-//   top: 330px;
-//   bottom: 54px;
-//   background-color: $main-color;
-//   overflow: auto;
-//   width: 280px;
+// $main-color: #0F172A;
+// $secundary-color: #004084;
+// $content-exp-panel: #004084;
+// $hover-simple-item: #2e2e8e;
+// mat-toolbar{
+//   background: #fff;
+//   color: #0F172A;
 // }
 
-.sidenav-dms {
-  margin: 5px;
-  width: 300px;
-  border-right: none;
-  background: $main-color;
-  color: white;
-  border-radius: 10px;
-  padding: 0px;
-  text-align: center;
-  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
-  letter-spacing: normal;
-}
-.nav-dms a {
-  color: white;
-  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
-  letter-spacing: normal;
-}
+// mat-sidenav{
+//   margin: 0px;
+//   width: 300px;
+//   border-right: none;
+//   background: #0F172A;
+//   color: white;
+//   border-radius: 0px;
+//   padding: 16px;
+//   text-align: center;
+//   button{
+//     font-family: 'Barlow', sans-serif;
+//   }
 
-a.mat-list-item.mat-focus-indicator.item-menu-dms:hover {
-  border-left: solid 1px #cacaca;
-  box-sizing: border-box;
-  background-color: $main-color;
-}
+// }
 
-a.mat-list-item.mat-focus-indicator.item-menu-dms.simple-item {
-  height: 45px;
-}
-.item-menu-dms {
-  border-left-color: solid 1px rgb(249, 219, 219)
-}
-.simple-item {
-  margin-bottom: 0.2em;
-  background-color: $main-color;
-}
+// .content {
+//   height: calc(100vh - 100px);
+//   // border-radius: 10px;
+//   // margin: 16px;
+//   // margin-left: 32px;
 
-.simple-item:hover {
-  margin-bottom: 0.2em;
-  background-color: $hover-simple-item;
-}
-.exp-header-dms {
-  padding: 0 20px 0 18px;
-  height: 45px;
-  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
-}
-.exp-item {
-  background-color: $content-exp-panel;
-}
-mat-expansion-panel {
-  background-color: $main-color;
-  margin-bottom: 0.2em;
-  border-radius: 0px;
-}
+//   // display: flex;
+//   // justify-content: center;
+//   // align-items: center;
 
-mat-expansion-panel,
-mat-expansion-panel.mat-expanded.mat-expansion-panel-spacing {
-  background: $content-exp-panel;
-  color: #fff;
-}
-.mat-expansion-panel-header-title {
-  color: rgb(255 255 255 / 87%);
-}
-mat-expansion-panel:hover {
-  background-color: $content-exp-panel;
-  border-left: solid 1px #cacaca;
-}
+//   // font-size: 2rem;
+//   color: lightgray;
+// }
 
 
+// .toolbar-logo {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: #ffffff;
+//   width: 200px;
+//   height: 100%;
+//   padding: 5px;
+//   clip-path: polygon(0% 0%,90% 0%,100% 100%,0% 100%);
+//   .logo-app{
+//     width: auto;
+//     max-width: 90%;
+//     max-height: 90%;
+//     margin-right: 20px;
+//   }
+// }
 
-.mat-accordion .mat-expansion-panel:first-of-type {
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-}
+// mat-sidenav-container {
+//   height: calc(100vh);
+//   // height: calc(100vh - 65px);
+// }
 
-.mat-accordion .mat-expansion-panel:last-of-type {
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
 
-span.mat-list-item-content:hover {
-  background-color: $main-color;
-}
+// .menu-button {
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-start;
+//   font-size: 1rem;
+
+//   mat-icon {
+//       margin-right: 8px;
+//   }
+// }
+
+// .avatar {
+//   margin-top: 16px;
+//   width: 60px;
+//   height: 60px;
+//   border-radius: 50%;
+// }
+// .name {
+//     margin-top: 8px;
+//     font-weight: normal;
+//     margin-bottom: 2px;
+// }
+
+// .designation {
+//     margin-top: 2px;
+//     font-size: 0.7rem;
+//     color: lightgrey;
+// }
+
+// mat-divider {
+//     margin-top: 16px;
+//     margin-bottom: 16px;
+//     background-color: rgba(255, 255, 255, 0.5);
+// }
+
+// .close-nav{
+//   position: absolute;
+//   /* float: right; */
+//   display: flex;
+//   line-height: 2.5;
+//   right: 13px;
+//   justify-content: center;
+// }
+
+// .session-user {
+//   display: flex;
+//   position: absolute;
+//   right: 0;
+// }
+// // .main-nav {
+// //   position: fixed;
+// //   top: 330px;
+// //   bottom: 54px;
+// //   background-color: $main-color;
+// //   overflow: auto;
+// //   width: 280px;
+// // }
+
+// .sidenav-dms {
+//   margin: 5px;
+//   width: 300px;
+//   border-right: none;
+//   background: $main-color;
+//   color: white;
+//   border-radius: 10px;
+//   padding: 0px;
+//   text-align: center;
+//   font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+//   letter-spacing: normal;
+// }
+// .nav-dms a {
+//   color: white;
+//   font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+//   letter-spacing: normal;
+// }
+
+// a.mat-list-item.mat-focus-indicator.item-menu-dms:hover {
+//   border-left: solid 1px #cacaca;
+//   box-sizing: border-box;
+//   background-color: $main-color;
+// }
+
+// a.mat-list-item.mat-focus-indicator.item-menu-dms.simple-item {
+//   height: 45px;
+// }
+// .item-menu-dms {
+//   border-left-color: solid 1px rgb(249, 219, 219)
+// }
+// .simple-item {
+//   margin-bottom: 0.2em;
+//   background-color: $main-color;
+// }
+
+// .simple-item:hover {
+//   margin-bottom: 0.2em;
+//   background-color: $hover-simple-item;
+// }
+// .exp-header-dms {
+//   padding: 0 20px 0 18px;
+//   height: 45px;
+//   font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+// }
+// .exp-item {
+//   background-color: $content-exp-panel;
+// }
+// mat-expansion-panel {
+//   background-color: $main-color;
+//   margin-bottom: 0.2em;
+//   border-radius: 0px;
+// }
+
+// mat-expansion-panel,
+// mat-expansion-panel.mat-expanded.mat-expansion-panel-spacing {
+//   background: $content-exp-panel;
+//   color: #fff;
+// }
+// .mat-expansion-panel-header-title {
+//   color: rgb(255 255 255 / 87%);
+// }
+// mat-expansion-panel:hover {
+//   background-color: $content-exp-panel;
+//   border-left: solid 1px #cacaca;
+// }
+
+
+
+// .mat-accordion .mat-expansion-panel:first-of-type {
+//   border-top-right-radius: 0px;
+//   border-top-left-radius: 0px;
+// }
+
+// .mat-accordion .mat-expansion-panel:last-of-type {
+//   border-bottom-right-radius: 0px;
+//   border-bottom-left-radius: 0px;
+// }
+
+// span.mat-list-item-content:hover {
+//   background-color: $main-color;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: #7859c2;
+//   border-radius: 4px;
+//   height: 7px;
+// }
+
+// ::-webkit-scrollbar {
+//   width: 8px;
+//   height: 8px;
+//   background: rgb(138, 119, 213);
+//   border-radius: 4px;
+// }
