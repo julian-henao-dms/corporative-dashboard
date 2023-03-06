@@ -1,145 +1,120 @@
-<!-- <mat-toolbar>
-  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
-    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-        <mat-icon *ngIf="sidenav.opened">  close </mat-icon>
-</button>
-  Responsive sidebar navigation....
-
-</mat-toolbar> -->
-
 <mat-sidenav-container>
-  <mat-sidenav  #sidenav="matSidenav">
+  <mat-sidenav #sidenav="matSidenav">
     <div class="container-nav">
-    <button  class="material-symbols-outlined close-nav" mat-icon-button  (click)="sidenav.toggle()">
-      <mat-icon> close </mat-icon>
-      <!-- <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon> -->
-          <!-- <mat-icon *ngIf="sidenav.opened">  close </mat-icon> -->
-  </button>
-    <!-- <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
-      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-          <mat-icon *ngIf="sidenav.opened">  close </mat-icon>
-  </button> -->
-  <div class="header-nav">
-    <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
+      <button
+        class="material-symbols-outlined close-nav"
+        mat-icon-button
+        (click)="sidenav.toggle()"
+      >
+        <mat-icon> close </mat-icon>
+      </button>
 
-  <h4 class="name">Super Usuario dms</h4>
+      <div class="header-nav">
+        <img
+          class="avatar mat-elevation-z8"
+          src="https://source.unsplash.com/c_GmwfHBDzk/200x200"
+        />
 
-  <p class="designation"> 01.1.3 - CUE ESPAÑA TAL</p>
+        <h4 class="name">Super Usuario dms</h4>
 
-  <mat-divider></mat-divider>
-</div>
-    <!-- DMS -->
-    <!-- <ul>
-      <li mat-button class="menu-button">
-        <mat-icon class="material-symbols-outlined">
-        home</mat-icon>
-        <span>Home</span>
-    </li>
-    <li mat-button class="menu-button">
-        <mat-icon class="material-symbols-outlined">upload_file</mat-icon>
-        <span>Carga de imágenes</span>
-    </li>
-    <li mat-button class="menu-button">
-        <mat-icon class="material-symbols-outlined">emoji_transportation</mat-icon>
-        <span>Servicios de Taller</span>
-    </li>
-    </ul> -->
+        <p class="designation">01.1.3 - CUE ESPAÑA TAL</p>
+
+        <mat-divider></mat-divider>
+      </div>
 
       <div class="main-nav">
         <mat-nav-list class="nav-dms">
-            <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" >
-                <mat-icon class="material-symbols-outlined">home</mat-icon>Inicio</a>
-            <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" >
-                <mat-icon class="material-symbols-outlined">upload_file</mat-icon>Carga de imágenes</a>
+          <a
+            class="item-menu-dms simple-item"
+            mat-list-item
+            href="#"
+            routerLink="/home"
+          >
+            <mat-icon class="material-symbols-outlined">home</mat-icon>Inicio</a
+          >
+          <a
+            class="item-menu-dms simple-item"
+            mat-list-item
+            href="#"
+            routerLink="/home"
+          >
+            <mat-icon class="material-symbols-outlined">upload_file</mat-icon
+            >Carga de imágenes</a
+          >
 
-
-            <mat-accordion class="app-nav-accordion">
-                <mat-expansion-panel class="mat-elevation-z0 dms-exp-header">
-                    <mat-expansion-panel-header class="exp-header-dms">
-                        <mat-panel-title>
-                            <mat-icon class="material-symbols-outlined">emoji_transportation</mat-icon>Servicios de Taller</mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <mat-nav-list>
-                        <a class="item-menu-dms exp-item" mat-list-item href="#" routerLink="/categorias" >
-                            <mat-icon class="material-symbols-outlined">category</mat-icon>Categorias</a>
-                        <a class="item-menu-dms exp-item" mat-list-item href="#" routerLink="/producto" >
-                            <mat-icon class="material-symbols-outlined">sell</mat-icon>Producto</a>
-                    </mat-nav-list>
-                </mat-expansion-panel>
-            </mat-accordion>
-
+          <mat-accordion class="app-nav-accordion">
+            <mat-expansion-panel class="mat-elevation-z0 dms-exp-header">
+              <mat-expansion-panel-header class="exp-header-dms">
+                <mat-panel-title>
+                  <mat-icon class="material-symbols-outlined"
+                    >emoji_transportation</mat-icon
+                  >Servicios de Taller</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <mat-nav-list>
+                <a
+                  class="item-menu-dms exp-item"
+                  mat-list-item
+                  href="#"
+                  routerLink="/categorias"
+                >
+                  <mat-icon class="material-symbols-outlined">category</mat-icon
+                  >Categorias</a
+                >
+                <a
+                  class="item-menu-dms exp-item"
+                  mat-list-item
+                  href="#"
+                  routerLink="/producto"
+                >
+                  <mat-icon class="material-symbols-outlined">sell</mat-icon
+                  >Producto</a
+                >
+              </mat-nav-list>
+            </mat-expansion-panel>
+          </mat-accordion>
         </mat-nav-list>
 
         <mat-divider></mat-divider>
-        <!-- <button mat-button class="menu-button">
-        <mat-icon>help</mat-icon>
-        <span>Help</span>
-    </button> -->
 
-
-    <!-- <button mat-button class="menu-button">
-      <mat-icon class="material-symbols-outlined">
-      home</mat-icon>
-      <span>Home</span>
-  </button>
-  <button mat-button class="menu-button">
-      <mat-icon class="material-symbols-outlined">upload_file</mat-icon>
-      <span>Carga de imágenes</span>
-  </button>
-  <button mat-button class="menu-button">
-      <mat-icon class="material-symbols-outlined">emoji_transportation</mat-icon>
-      <span>Servicios de Taller</span>
-  </button> -->
-
-  <!-- <mat-divider></mat-divider> -->
-  <mat-nav-list class="nav-dms">
-  <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/categorias" >
-    <mat-icon class="material-symbols-outlined">help</mat-icon>Ayuda</a>
-  </mat-nav-list>
-</div>
-</div>
+        <mat-nav-list class="nav-dms">
+          <a
+            class="item-menu-dms simple-item"
+            mat-list-item
+            href="#"
+            routerLink="/categorias"
+          >
+            <mat-icon class="material-symbols-outlined">help</mat-icon>Ayuda</a
+          >
+        </mat-nav-list>
+      </div>
+    </div>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar>
-<div class="menu-logo-container">
-  <button mat-icon-button  (click)="sidenav.toggle()">
-    <mat-icon> menu </mat-icon>
-    <!-- <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon> -->
-        <!-- <mat-icon *ngIf="sidenav.opened">  close </mat-icon> -->
-</button>
-<div class="toolbar-logo">
-  <img class="logo-app" src="../assets/img/logo.png" alt="">
-</div>
-</div>
-<div class="session-user">
-  <button  class="menu-button-top">
-    <mat-icon class="material-symbols-outlined btn-top-menu">
-    home</mat-icon>
-
-</button>
-  <button  class="menu-button-top">
-    <mat-icon class="material-symbols-outlined btn-top-menu">
-      logout</mat-icon>
-
-</button>
-</div>
+      <div class="menu-logo-container">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon> menu </mat-icon>
+        </button>
+        <div class="toolbar-logo">
+          <img class="logo-app" src="../assets/img/logo.png" alt="" />
+        </div>
+      </div>
+      <div class="session-user">
+        <button class="menu-button-top">
+          <mat-icon class="material-symbols-outlined btn-top-menu">
+            home</mat-icon
+          >
+        </button>
+        <button class="menu-button-top">
+          <mat-icon class="material-symbols-outlined btn-top-menu">
+            logout</mat-icon
+          >
+        </button>
+      </div>
     </mat-toolbar>
     <div class="content">
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-<!-- <mat-sidenav-container>
-  <mat-sidenav mode="side" opened>
-    DMS
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar>
-      Responsive sidebar navigation
-    </mat-toolbar>
-    <div class="content">
-      Main content
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container> -->
