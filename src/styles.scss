@@ -6,3 +6,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-expansion-panel-header-description, .mat-expansion-indicator::after {
   color: white;
 }
+
+.item-menu-dms mat-icon, mat-expansion-panel mat-icon {
+  // margin-right: 8px;
+  line-height: 0.8;
+  margin-right: 5px;
+}
+
